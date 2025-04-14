@@ -1,0 +1,29 @@
+{
+    "type": "excalidraw",
+    "version": 2,
+    "source": "ChatGPT",
+    "elements": [
+      { "id": "kb", "type": "rectangle", "x": 100, "y": 100, "width": 120, "height": 80, "text": "Knowledge Base", "strokeColor": "#000000" },
+      { "id": "chunks", "type": "rectangle", "x": 300, "y": 100, "width": 120, "height": 80, "text": "Data Chunks", "strokeColor": "#000000" },
+      { "id": "embed_model", "type": "rectangle", "x": 500, "y": 100, "width": 140, "height": 160, "text": "Embedding Model", "strokeColor": "#d9480f", "backgroundColor": "#ffd8a8" },
+      { "id": "vector_db", "type": "ellipse", "x": 720, "y": 110, "width": 140, "height": 160, "text": "Vector DB", "strokeColor": "#2f9e44", "backgroundColor": "#d3f9d8" },
+      { "id": "retrieved_docs", "type": "rectangle", "x": 920, "y": 130, "width": 140, "height": 80, "text": "Retrieved Docs", "strokeColor": "#000000" },
+      { "id": "user_query", "type": "ellipse", "x": 100, "y": 350, "width": 80, "height": 80, "text": "User Query", "strokeColor": "#1864ab", "backgroundColor": "#a5d8ff" },
+      { "id": "prompt", "type": "rectangle", "x": 300, "y": 370, "width": 100, "height": 80, "text": "Prompt", "strokeColor": "#862e9c", "backgroundColor": "#eebefa" },
+      { "id": "llm", "type": "ellipse", "x": 520, "y": 380, "width": 100, "height": 60, "text": "LLM", "strokeColor": "#f08c00", "backgroundColor": "#fff3bf" },
+      { "id": "output", "type": "text", "x": 520, "y": 460, "width": 100, "height": 20, "text": "Output", "strokeColor": "#000000" },
+      { "type": "arrow", "id": "kb_chunks", "start": {"x":220, "y":140}, "end": {"x":300, "y":140} },
+      { "type": "arrow", "id": "chunks_embed", "start": {"x":420, "y":140}, "end": {"x":500, "y":140} },
+      { "type": "arrow", "id": "embed_vector", "start": {"x":640, "y":160}, "end": {"x":720, "y":160} },
+      { "type": "arrow", "id": "vector_retrieved", "start": {"x":860, "y":160}, "end": {"x":920, "y":170} },
+      { "type": "arrow", "id": "user_prompt", "start": {"x":180, "y":390}, "end": {"x":300, "y":400} },
+      { "type": "arrow", "id": "retrieved_prompt", "start": {"x":920, "y":210}, "end": {"x":350, "y":370}, "points":[{"x":950,"y":400}]},
+      { "type": "arrow", "id": "prompt_llm", "start": {"x":400, "y":410}, "end": {"x":520, "y":410} },
+      { "type": "arrow", "id": "llm_output", "start": {"x":570, "y":440}, "end": {"x":570, "y":460} }
+    ],
+    "appState": {
+      "viewBackgroundColor": "#ffffff",
+      "gridSize": null
+    }
+  }
+  
